@@ -18,7 +18,7 @@ namespace TheradingConsole
             
             Thread thread = new Thread(new ThreadStart(Operations.GetPallidromNo));   // Single thread  
             thread.Start();   // Start 
-
+            thread.Abort();   // Abort 
             Operations.GetEvenNo();  // w/o thread.  
 
             Console.WriteLine("--------------------------- Single thread end ---------------------------------");
@@ -28,7 +28,9 @@ namespace TheradingConsole
             Thread MultiThread2 = new Thread(Operations.GetPallidromNo); //Creating the Thread    
             MultiThread1.Start(); //Starting the Thread    
             MultiThread2.Start(); //Starting the Thread 
-
+            MultiThread1.Abort(); // Abort
+            MultiThread2.Abort();
+        
             Console.WriteLine("--------------------------- Multi thread end ---------------------------------");
 
         }
