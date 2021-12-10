@@ -9,9 +9,10 @@ namespace TheradingConsole
     {
         static void Main(string[] args)
         {
+        //declar obj
             FileStream ostrm;
             StreamWriter writer;
-            TextWriter oldOut = Console.Out;
+            TextWriter oldOut = Console.Out; 
             try
             {
                 // Log File Create
@@ -50,7 +51,7 @@ namespace TheradingConsole
 
             Console.WriteLine("--------------------------- Multi thread end ---------------------------------");
 
-            Console.SetOut(oldOut);
+            Console.SetOut(oldOut); //write to txt file
             writer.Close();
             ostrm.Close();      // Log File end
             Console.WriteLine(" *************************** End Here ****************************************");

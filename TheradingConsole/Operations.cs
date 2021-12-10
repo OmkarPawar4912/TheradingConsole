@@ -14,8 +14,8 @@ namespace TheradingConsole
             {
                 if (i % 2 == 0)
                 {
-                    Console.WriteLine(" Even : " + i);
-                    Thread.Sleep(3000);
+                    Console.WriteLine(" Even : " + i); // Print even no
+                    Thread.Sleep(3000);                //Sleep 3 sec
                 }
             }
         }
@@ -37,8 +37,8 @@ namespace TheradingConsole
                 }
                 if (num == rev_no)
                 {
-                    Console.WriteLine("Palindrome : {0}", num);
-                    Thread.Sleep(3000);
+                    Console.WriteLine("Palindrome : {0}", num);  // Print Pallindrom no
+                    Thread.Sleep(3000);                          //Sleep 3 sec
                 }
             }
         }
